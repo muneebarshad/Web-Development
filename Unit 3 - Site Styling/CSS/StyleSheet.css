@@ -1,0 +1,111 @@
+body{
+  background-color:rgb(244, 223, 202);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  background-color: rgb(26, 19, 11);
+  display:inline-flex;
+  justify-content: space-around;
+  height: 90px;
+  margin-bottom: 30px;
+  align-items: center;
+  width: 100%
+}
+
+nav ul{
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: rgb(186, 168, 155);
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+  color: rgb(164, 49, 7);
+  text-decoration: underline;
+}
+
+
+.Logo{
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 23px;
+  margin-left: 15px;
+  width: 50%;
+}
+
+.Logo a{
+  color: rgb(186, 168, 155);
+  text-decoration: none;
+  font: italic 1.2em "Fira Sans", serif;
+}
+
+
+/*DropDownSkin Care button*/
+/*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+
+.DropDown{
+  float:left;
+  overflow: hidden;
+}
+
+.dropdownButton{
+  font-size: 17px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 7px;
+}
+
+.dropdownButton a{
+  text-decoration: none;
+  color: rgb(186, 168, 155);
+  padding-right: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  background-color:rgb(244, 223, 202);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(142, 137, 135);
+  color: rgb(186, 168, 155);
+}
+
+
+.DropDown:hover .dropdown-content {
+  display: block;
+}
