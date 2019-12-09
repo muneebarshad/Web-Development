@@ -21,26 +21,6 @@ nav {
   width: 100%
 }
 
-nav ul{
-  margin: 50px;
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-
-nav ul li a{
-  text-decoration: none;
-  font-size: 16px;
-  font-family: sans-serif;
-  color: rgb(186, 168, 155);
-  letter-spacing: 1px;
-}
-
-nav ul li a:hover{
-  color: rgb(164, 49, 7);
-  text-decoration: underline;
-}
-
 
 .Logo{
   margin: 0 auto;
@@ -59,11 +39,6 @@ nav ul li a:hover{
 
 /*DropDownSkin Care button*/
 /*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
-
-.DropDown{
-  float:left;
-  overflow: hidden;
-}
 
 .dropdownButton{
   font-size: 17px;
@@ -86,7 +61,7 @@ nav ul li a:hover{
   position: absolute;
   background-color: #f9f9f9;
   width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 10px 8px 36px 10px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -105,7 +80,49 @@ nav ul li a:hover{
   color: rgb(186, 168, 155);
 }
 
-
 .DropDown:hover .dropdown-content {
   display: block;
+}
+
+/*Slide show container*/
+
+.New-Featured-Products{
+  width: 80%;
+  position: relative;
+  margin: auto;
+  border: 3px solid #73AD21;
+  overflow: hidden;
+  background-color: white;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  user-select:none;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgb(142, 137, 135);
+}
+
+.Text-container{
+  position: absolute;
+  right: 30px;
+  height: 218px;
+  width: 50%;
+  border: 3px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
