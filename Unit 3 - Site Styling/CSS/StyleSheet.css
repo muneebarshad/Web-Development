@@ -27,7 +27,8 @@ nav {
   letter-spacing: 2px;
   font-size: 23px;
   margin-left: 15px;
-  width: 50%;
+  min-width: 50%;
+  display: inline-flex;
 }
 
 .Logo a{
@@ -90,8 +91,7 @@ nav {
   width: 80%;
   position: relative;
   margin: auto;
-  border: 3px solid #73AD21;
-  overflow: hidden;
+  overflow:visible;
   background-color: white;
 }
 
@@ -117,12 +117,32 @@ nav {
   background-color: rgb(142, 137, 135);
 }
 
+.image{
+  width: 300px;
+  height: 233px;
+}
+
+.image:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
 .Text-container{
   position: absolute;
   right: 30px;
   height: 218px;
   width: 50%;
-  border: 3px solid black;
+  background-color: white;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.New-text{
+  text-align: center;
+  font-size: 20px;
+  font-family:cursive;
+  border: 2px solid black;
+  width: 100px;
+
 }
