@@ -12,21 +12,34 @@ body{
 
 
 nav {
-  background-color: rgb(26, 19, 11);
-  display:inline-flex;
-  justify-content: space-around;
-  height: 90px;
-  margin-bottom: 30px;
-  width: 100%
+
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
+
+nav .Navigation{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 600px;
+  display: inline-flex;
+  justify-content: space-between;
+
+}
+
 
 nav .Logo{
-  left: 0;
-}
-
-
-ul{
-  float: left;
+  float:left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
 }
 
 nav .Logo h1 a{
@@ -34,40 +47,32 @@ nav .Logo h1 a{
   text-decoration: none;
   font: italic 1.2em "Fira Sans", serif;
   font-size: 33px;
-  width: 30%;
-  left: 0;
-  position: absolute;
-
 }
 
-li {
-  float: right;
+
+.main {
+  padding: 16px;
+  margin-top: 70px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+
 
 /*DropDownSkin Care button*/
 /*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 
-.DropDown{
+.dropdown{
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .dropdownButton{
   font-size: 17px;
   border: none;
   outline: none;
-  padding: 14px 16px;
+  padding: 14px 14px;
   background-color: inherit;
   font-family: inherit;
-  margin: 7px;
 }
 
 .dropdownButton a{
@@ -80,41 +85,26 @@ li a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  width: 200px;
-  box-shadow: 10px 8px 36px 10px rgba(0,0,0,0.2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
   color: black;
-  background-color:rgb(244, 223, 202);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: rgb(142, 137, 135);
-  color: rgb(186, 168, 155);
-}
-
-.DropDown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
-  display: inline;
 }
+
+
+
 
 /*Slide show container*/
-
-.New-Featured-Products{
-  width: 80%;
-  position: relative;
-  margin: auto;
-  overflow:visible;
-  background-color: white;
-
-}
 
 .prev, .next {
   cursor: pointer;
@@ -136,34 +126,4 @@ li a {
 
 .prev:hover, .next:hover {
   background-color: rgb(142, 137, 135);
-}
-
-.image{
-  width: 300px;
-  height: 233px;
-}
-
-.image:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-}
-
-.Text-container{
-  position: absolute;
-  right: 30px;
-  height: 218px;
-  width: 50%;
-  background-color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.New-text{
-  text-align: center;
-  font-size: 20px;
-  font-family:cursive;
-  border: 2px solid black;
-  width: 100px;
-
 }
