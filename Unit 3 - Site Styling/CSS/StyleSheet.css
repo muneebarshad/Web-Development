@@ -12,7 +12,7 @@ body{
 
 
 nav {
-
+  list-style-type: none;
   background-color: #333;
   position: fixed;
   top: 0;
@@ -29,7 +29,7 @@ nav .Navigation{
   text-decoration: none;
   font-size: 17px;
   width: 600px;
-  display: inline-flex;
+  display:inline-flex;
   justify-content: space-between;
 
 }
@@ -51,15 +51,16 @@ nav .Logo h1 a{
 
 
 .main {
-  padding: 16px;
+  padding: 20px;
   margin-top: 70px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 
 
 
-/*DropDownSkin Care button*/
-/*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+/*DropDown button*/
+
+/*Reference: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 
 .dropdown{
   position: relative;
@@ -67,7 +68,6 @@ nav .Logo h1 a{
 }
 
 .dropdownButton{
-  font-size: 17px;
   border: none;
   outline: none;
   padding: 14px 14px;
@@ -75,23 +75,30 @@ nav .Logo h1 a{
   font-family: inherit;
 }
 
+.dropdown:hover{
+
+}
+
 .dropdownButton a{
   text-decoration: none;
   color: rgb(186, 168, 155);
   padding-right: 50px;
+  font-size: 17px;
+
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: black;
   min-width: 160px;
+  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color:rgb(186, 168, 155);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
