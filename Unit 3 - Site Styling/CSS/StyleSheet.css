@@ -25,23 +25,31 @@ nav .Logo{
 }
 
 
-
+ul{
+  float: left;
+}
 
 nav .Logo h1 a{
   color: rgb(186, 168, 155);
   text-decoration: none;
   font: italic 1.2em "Fira Sans", serif;
   font-size: 33px;
-  width: auto;
+  width: 30%;
   left: 0;
   position: absolute;
 
 }
 
-nav .Navigation{
-  display: inline;
-	width: auto;
-	margin-left: 5em;
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /*DropDownSkin Care button*/
