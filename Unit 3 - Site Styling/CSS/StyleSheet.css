@@ -20,30 +20,36 @@ nav {
   width: 100%
 }
 
-
-.Logo{
-  margin: 0 auto;
-  letter-spacing: 2px;
-  font-size: 23px;
-  margin-left: 15px;
+nav .Logo{
   left: 0;
-  position: fixed;
 }
 
-.Logo a{
+
+
+
+nav .Logo h1 a{
   color: rgb(186, 168, 155);
   text-decoration: none;
   font: italic 1.2em "Fira Sans", serif;
+  font-size: 33px;
+  width: auto;
+  left: 0;
+  position: absolute;
+
 }
 
-
+nav .Navigation{
+  display: inline;
+	width: auto;
+	margin-left: 5em;
+}
 
 /*DropDownSkin Care button*/
 /*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 
 .DropDown{
-  display: inline;
-  
+  position: relative;
+  display: inline-block;
 }
 
 .dropdownButton{
@@ -88,6 +94,7 @@ nav {
 
 .DropDown:hover .dropdown-content {
   display: block;
+  display: inline;
 }
 
 /*Slide show container*/
