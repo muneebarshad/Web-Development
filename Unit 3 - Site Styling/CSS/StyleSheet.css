@@ -17,7 +17,6 @@ nav {
   justify-content: space-around;
   height: 90px;
   margin-bottom: 30px;
-  align-items: center;
   width: 100%
 }
 
@@ -27,8 +26,8 @@ nav {
   letter-spacing: 2px;
   font-size: 23px;
   margin-left: 15px;
-  min-width: 50%;
-  display: inline-flex;
+  left: 0;
+  position: fixed;
 }
 
 .Logo a{
@@ -38,8 +37,14 @@ nav {
 }
 
 
+
 /*DropDownSkin Care button*/
 /*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+
+.DropDown{
+  display: inline;
+  
+}
 
 .dropdownButton{
   font-size: 17px;
@@ -93,6 +98,7 @@ nav {
   margin: auto;
   overflow:visible;
   background-color: white;
+
 }
 
 .prev, .next {
