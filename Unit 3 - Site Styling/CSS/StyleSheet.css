@@ -1,5 +1,5 @@
 body{
-  background-color:rgb(244, 223, 202);
+  background-color:rgb(255, 255, 255);
   font-family: Verdana, Arial, Helvetica, sans-serif;
   line-height: normal;
 }
@@ -12,11 +12,13 @@ body{
 
 
 nav {
-  list-style-type: none;
+
   background-color: #333;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
+
 
 }
 
@@ -28,8 +30,7 @@ nav .Navigation{
   padding: 14px 14px;
   text-decoration: none;
   font-size: 17px;
-  width: 600px;
-  display:inline-flex;
+  display: inline-flex;
   justify-content: space-between;
 
 }
@@ -51,23 +52,26 @@ nav .Logo h1 a{
 
 
 .main {
-  padding: 20px;
-  margin-top: 70px;
+  padding: 16px;
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 
 
 
-/*DropDown button*/
-
-/*Reference: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+/*DropDownSkin Care button*/
+/*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 
 .dropdown{
   position: relative;
   display: inline;
+
 }
 
 .dropdownButton{
+  font-size: 17px;
   border: none;
   outline: none;
   padding: 14px 14px;
@@ -75,30 +79,24 @@ nav .Logo h1 a{
   font-family: inherit;
 }
 
-.dropdown:hover{
-
-}
-
 .dropdownButton a{
   text-decoration: none;
   color: rgb(186, 168, 155);
   padding-right: 50px;
-  font-size: 17px;
-
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color:#333;
   min-width: 160px;
-  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  width: 200px;
 }
 
 .dropdown-content a {
-  color:rgb(186, 168, 155);
+  color: rgb(186, 168, 155);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -109,28 +107,76 @@ nav .Logo h1 a{
 }
 
 
-
-
 /*Slide show container*/
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  padding: 16px;
   color: black;
   font-weight: bold;
   font-size: 18px;
   user-select:none;
-  padding-left: 8px;
-  padding-right: 8px;
+  width: 15px;
 
 }
 
 .next {
   right: 0;
+  cursor: pointer;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgb(142, 137, 135);
+  color: rgb(186, 168, 155);
+}
+
+.container{
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  padding-left:15px;
+  padding-right: 15px;
+  position: relative;
+
+
+}
+
+.image{
+  position: absolute;
+  padding-left: 30px;
+
+}
+
+.text{
+  position: absolute;
+  margin-left: 400px;
+  height: 300px;
+  width: auto;
+}
+
+
+.text p{
+  padding-top: 70px;
+  padding-right: 15px;
+  color:  rgb(230, 172, 95);
+  font-size: 30px;
+  text-align: center;
+}
+
+.DiscoverButton{
+  position: absolute;
+  bottom: 10px;
+  width: auto;
+  right: 20px;
+}
+
+.DiscoverButton a{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(230, 172, 95);
+  background-color:rgb(222, 221, 220);
+}
+
+.DiscoverButton a:hover{
+  background-color: white;
+
 }
