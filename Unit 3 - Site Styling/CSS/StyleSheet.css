@@ -130,7 +130,8 @@ nav .Logo h1 a{
   color: rgb(186, 168, 155);
 }
 
-.container{
+/*Slide container*/
+.slide-container{
   background-color: rgb(255, 255, 255);
   height: 300px;
   padding-left:15px;
@@ -146,6 +147,10 @@ nav .Logo h1 a{
 
 }
 
+.image:hover{
+  transform: scale(1.1);
+}
+/*Text inside the slide xontainer*/
 .text{
   position: absolute;
   margin-left: 400px;
@@ -161,6 +166,8 @@ nav .Logo h1 a{
   font-size: 30px;
   text-align: center;
 }
+
+/*Discpover button inside the slide container*/
 
 .DiscoverButton{
   position: absolute;
@@ -178,5 +185,111 @@ nav .Logo h1 a{
 
 .DiscoverButton a:hover{
   background-color: white;
+
+}
+
+/*About us container on home page */
+#AboutUs{
+  background-color: rgb(230, 230, 230);
+  height: 400px;
+  padding-left:15px;
+  padding-right: 15px;
+  position: absolute;
+  width: 50%;
+  opacity: 0.8;
+}
+
+#AboutUs h3{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(61, 48, 18);
+  letter-spacing: 1px;
+  padding-top: 15px;
+
+}
+
+#AboutUs p{
+  padding-top: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(61, 48, 18);
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+#AboutUs p span{
+  font-weight: 600;
+  color: rgb(126, 100, 6);
+}
+
+/*Connect page*/
+
+#Connect{
+
+  background-color: white;
+  padding-left:15px;
+  padding-right: 15px;
+  position: absolute;
+  height:400px;
+  width: 40%;
+  right: 0px;
+  margin-left: 40px;
+  border-left: 1px solid rgb(142, 133, 106);
+
+}
+
+#Connect h3{
+  color:  rgb(61, 48, 18);
+  font-size: 14px;
+  font-weight: 600px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+}
+
+.container{
+  background-color: white;
+  padding-left:15px;
+  padding-right: 15px;
+  position: relative;
+  top: 250px;
+  height:400px;
+  width: 100%;
+  position: relative;
+}
+
+.social-icons{
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  opacity: 0.8;
+}
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-amazon{
+  background: rgb(238, 238, 238);
+  color: black;
+}
+
+.LogoImage {
+  opacity: 0.5;
+  width: 100%;
+  height: 250px;
 
 }
