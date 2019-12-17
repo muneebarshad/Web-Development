@@ -52,7 +52,6 @@ nav .Logo h1 a{
 
 
 .main {
-  padding: 16px;
   margin-top: 150px;
   margin-left: 10%;
   margin-right: 10%;
@@ -181,10 +180,12 @@ nav .Logo h1 a{
   text-decoration: none;
   color: rgb(230, 172, 95);
   background-color:rgb(222, 221, 220);
+  font-weight: bold;
 }
 
 .DiscoverButton a:hover{
   background-color: white;
+  font-weight: lighter;
 
 }
 

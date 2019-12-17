@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Us page</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet_index.css">
+    <link rel="stylesheet" href="css/stylesheet_contact.css">
+    <link rel="stylesheet" href="css/stylesheet_product.css">
+
 
   </head>
   <body>
@@ -38,27 +41,33 @@
 
     </nav>
 
+    <div class="main">
 
 
-  <h2>Contact Us</h2>
+      <!-- Contact us form, mailed to author -->
+      <div class="container-contact">
+        <h2>Contact Us</h2>
+        <form class="Contact Us" action="mailto:arsham14@mcmaster.ca" method="post" enctype="text/plain"><br>
+          <label><span>Name:</span></label>
+          <input type="text" name="name" placeholder="Enter Name"><br>
 
-  <!-- Contact us form, mailed to author -->
-  <form class="Contact Us" action="mailto:arsham14@mcmaster.ca" method="post" enctype="text/plain"><br>
-    <label><span>Name:</span></label>
-    <input type="text" name="name" placeholder="Enter Name"><br>
+          <label><span>Email:</span></label>
+          <input type="text" name="email" placeholder="Enter Email"><br>
 
-    <label><span>Email:</span></label>
-    <input type="text" name="email" placeholder="Enter Email"><br>
+          <label><span>Contact Number:</span></label>
+          <input type="text" name="phone#" placeholder="Enter phone number"><br>
 
-    <label><span>Contact Number:</span></label>
-    <input type="tel" name="phone#" placeholder="Eneter phone number"><br>
+          <label><span>Message:</span></label><br>
+          <textarea name="message" rows="8" cols="80" placeholder="Enter Message"></textarea><br>
 
-    <label><span>Message:</span></label><br>
-    <textarea name="message" rows="8" cols="80" placeholder="Enter Message"></textarea><br>
+          <input type="submit" name="Submit" value="Submit">
+          <input type="reset" name="Reset" value="Reset">
+        </form>
+      </div>
 
-    <input type="submit" name="Submit" value="Submit">
-    <input type="reset" name="Reset" value="Reset">
-  </form>
+    </div>
+
+
   <hr>
     <!-- Footer Page -->
     <footer>
