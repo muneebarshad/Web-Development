@@ -1,3 +1,4 @@
+/*Main container for contact section*/
 .container-contact{
   background-color:rgb(218, 210, 192);
   padding: 15px;
@@ -13,6 +14,8 @@ h2{
   padding-top: 10px;
   color: rgb(138, 91, 0);
 }
+
+/*Styling for input section. Code reused from w3schools*/
 
 input[type=text], textarea {
   width: 100%;

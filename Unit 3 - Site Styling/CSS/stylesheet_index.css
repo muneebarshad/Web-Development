@@ -1,7 +1,11 @@
+
 body{
   background-color:rgb(255, 255, 255);
   font-family: Verdana, Arial, Helvetica, sans-serif;
   line-height: normal;
+  min-width: 40%;
+  min height: 40%;
+
 }
 
 * {
@@ -10,7 +14,7 @@ body{
   box-sizing: border-box;
 }
 
-
+/*Css for Navigation bar fixed at position on all pages*/
 nav {
 
   background-color: #333;
@@ -21,6 +25,8 @@ nav {
 
 
 }
+
+/*Navigation bar selection*/
 
 nav .Navigation{
   float: right;
@@ -35,7 +41,7 @@ nav .Navigation{
 
 }
 
-
+/*Logo on the navigation bar*/
 nav .Logo{
   float:left;
   display: block;
@@ -43,6 +49,7 @@ nav .Logo{
   padding: 14px 16px;
 }
 
+/*Styling for logo*/
 nav .Logo h1 a{
   color: rgb(186, 168, 155);
   text-decoration: none;
@@ -50,18 +57,18 @@ nav .Logo h1 a{
   font-size: 33px;
 }
 
-
+/*Main body of the webpage*/
 .main {
   margin-top: 150px;
   margin-left: 10%;
   margin-right: 10%;
   height:1100px;
+  overflow: auto;
 }
 
 
 
-/*DropDownSkin Care button*/
-/*https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+/*DropDown button for navigation selection. Reused code from : https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 
 .dropdown{
   position: relative;
@@ -106,8 +113,9 @@ nav .Logo h1 a{
 }
 
 
-/*Slide show container*/
+/*Slide show */
 
+/*Right and left button on for the slide show*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -129,7 +137,7 @@ nav .Logo h1 a{
   color: rgb(186, 168, 155);
 }
 
-/*Slide container*/
+/*Slide show  container*/
 .slide-container{
   background-color: rgb(255, 255, 255);
   height: 300px;
@@ -137,9 +145,11 @@ nav .Logo h1 a{
   padding-right: 15px;
   position: relative;
   overflow:visible;
+  width: 100%;
 
 }
 
+/*Image styling used in the slide show*/
 .image{
   position: absolute;
   padding-left: 30px;
@@ -149,10 +159,10 @@ nav .Logo h1 a{
 .image:hover{
   transform: scale(1.1);
 }
-/*Text inside the slide xontainer*/
+/*Text inside the slide container*/
 .text{
   position: absolute;
-  margin-left: 400px;
+  padding-left: 400px;
   height: 300px;
   width: auto;
 }
@@ -166,16 +176,15 @@ nav .Logo h1 a{
   text-align: center;
 }
 
-/*Discpover button inside the slide container*/
+/*Discover button inside the slide container*/
 
-.DiscoverButton{
+#DiscoverButton{
   position: absolute;
   bottom: 10px;
-  width: auto;
-  right: 20px;
+  padding-left: 350px;
 }
 
-.DiscoverButton a{
+#DiscoverButton a{
   text-align: center;
   text-decoration: none;
   color: rgb(230, 172, 95);
@@ -183,11 +192,24 @@ nav .Logo h1 a{
   font-weight: bold;
 }
 
-.DiscoverButton a:hover{
+#DiscoverButton a:hover{
   background-color: white;
   font-weight: lighter;
 
 }
+
+/*Container used at the bottom of the page for about us and connect section*/
+.container{
+  background-color: white;
+  padding-left:15px;
+  padding-right: 15px;
+  position: relative;
+  top: 250px;
+  height:400px;
+  width: 100%;
+  position: relative;
+}
+
 
 /*About us container on home page */
 #AboutUs{
@@ -224,7 +246,7 @@ nav .Logo h1 a{
   color: rgb(126, 100, 6);
 }
 
-/*Connect page*/
+/*Connect section on the index webpage*/
 
 #Connect{
 
@@ -249,17 +271,9 @@ nav .Logo h1 a{
 
 }
 
-.container{
-  background-color: white;
-  padding-left:15px;
-  padding-right: 15px;
-  position: relative;
-  top: 250px;
-  height:400px;
-  width: 100%;
-  position: relative;
-}
 
+
+/*Social icons: facebook and amazon. Reused code from w3schools*/
 .social-icons{
   position: absolute;
   left: 5%;
