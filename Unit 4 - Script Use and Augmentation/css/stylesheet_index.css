@@ -195,6 +195,27 @@ nav .Logo h1 a{
   text-align: center;
 }
 
+/*CSS code used from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+/*  Fair Use Policy: https://www.w3schools.com/about/default.asp */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /*Discover button inside the slide container*/
 
 #DiscoverButton{
