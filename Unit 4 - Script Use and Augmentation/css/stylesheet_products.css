@@ -46,6 +46,8 @@
   width: 100%;
   position: relative;
   top: 50px;
+  margin-bottom: 100px;
+  overflow: auto;
 }
 
 .product:hover{
@@ -55,10 +57,12 @@
 /*Text style for content under each product*/
 .product-description{
   position: absolute;
-  right: 40px;
-  width: 60%;
+  left: 0;
+  width: auto;
   top: 10%;
   padding-left: 15px;
+  margin-left: 400px;
+
 }
 
 .product-description h3{
@@ -90,5 +94,20 @@
   font-weight: bold;
   font-family: sans-serif;
   line-height: 30px;
+
+}
+/*Decrease the font of product description when window is resized*/
+@media screen and (max-width: 1000px) {
+
+  .product-description p{
+    font-size: 10px;
+  }
+
+  .product-description a{
+    font-size: 15px;
+  }
+
+}
+
 
 }
