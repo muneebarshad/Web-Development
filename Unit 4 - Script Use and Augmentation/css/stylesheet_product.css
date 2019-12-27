@@ -1,9 +1,52 @@
 /*Container for product images*/
 .image-container {
-  height:auto;
+  height:600px;
   width: 35%;
   position: absolute;
+
+
 }
+/*CSS code used from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery*/
+
+/*Images displayed in row*/
+.row{
+  position: absolute;
+  top: 310px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* three columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/*Image hidden at first*/
+.mySlides{
+  display: none;
+  padding-left: 30px;
+
+}
+
+/*ROw images styling*/
+.demo {
+  opacity: 0.6;
+}
+
+.demo:hover {
+  opacity: 1;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
 
 /*Container for the product description*/
 .content-container{

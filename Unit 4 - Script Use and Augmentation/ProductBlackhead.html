@@ -44,10 +44,38 @@
 
     <div class="main">
       <div class="image-container">
-        <img src="Images/blackhead_1.jpg" alt="Blackhead Image" width="250" height="233">
-        <img src="Images/blackhead_2.jpg" alt="Blackhead Image" width="250" height="233">
-        <img src="Images/blackhead_3.jpg" alt="Blackhead Image" width="250" height="233">
+
+        <div class="mySlides">
+          <img src="Images/blackhead_1.jpg" alt="Blackhead Image" height="300px" width="70%">
+        </div>
+        <div class="mySlides">
+          <img src="Images/blackhead_2.jpg" alt="Blackhead Image"  height="300px" width="70%">
+        </div>
+        <div class="mySlides">
+          <img src="Images/blackhead_3.jpg" alt="Blackhead Image" height="300px"  width="70%">
+        </div>
+
+        <!--This script was created by W3Schools; How To- Slideshow-->
+         <!--Link to guide: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+         <!--Fair Use Policy: https://www.w3schools.com/about/default.asp -->
+         <script type="text/javascript" src="scripts/Slideshow.js"></script>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="Images/blackhead_1.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/blackhead_2.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/blackhead_3.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(3)">
+          </div>
+        </div>
+
       </div>
+
+
+
       <div class="content-container">
           <h3>Blackhead Mask</h3>
           <div class="stars">

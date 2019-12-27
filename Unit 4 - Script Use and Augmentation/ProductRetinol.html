@@ -43,10 +43,37 @@
 
 
 <div class="main">
+
+  <!-- HTML used from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery -->
   <div class="image-container">
-    <img src="Images/retinol_1.jpg" alt="Retinol Mositurizer Image" width="250" height="233">
-    <img src="Images/retinol_2.jpg" alt="Retinol Mositurizer Image" width="250" height="233">
-    <img src="Images/retinol_3.jpg" alt="Retinol Mositurizer Image" width="250" height="233">
+
+    <div class="mySlides">
+      <img src="Images/retinol_1.jpg" alt="Blackhead Image" height="300px" width="70%">
+    </div>
+    <div class="mySlides">
+      <img src="Images/retinol_2.jpg" alt="Blackhead Image"  height="300px" width="70%">
+    </div>
+    <div class="mySlides">
+      <img src="Images/retinol_3.jpg" alt="Blackhead Image" height="300px"  width="70%">
+    </div>
+
+    <!--This script was created by W3Schools; How To- Slideshow-->
+     <!--Link to guide: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+     <!--Fair Use Policy: https://www.w3schools.com/about/default.asp -->
+     <script type="text/javascript" src="scripts/Slideshow.js"></script>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="Images/retinol_1.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(1)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/retinol_2.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(2)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/retinol_3.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(3)">
+      </div>
+    </div>
+
   </div>
   <div class="content-container">
       <h3>Retinol Mositurizer</h3>
