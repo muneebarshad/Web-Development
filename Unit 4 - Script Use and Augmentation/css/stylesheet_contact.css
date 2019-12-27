@@ -1,0 +1,70 @@
+/*Main container for contact section*/
+.container-contact{
+  background-color:rgb(218, 210, 192);
+  padding: 15px;
+  border-radius: 6px;
+  position:absolute;
+  width: 80%;
+  height: auto;
+
+}
+
+h2{
+  font-size: 24px;
+  padding-top: 10px;
+  color: rgb(138, 91, 0);
+}
+
+/*Styling for input section. Code reused from w3schools*/
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(138, 91, 0);
+  font-weight: bold;
+  background: rgb(241, 227, 202);
+  padding: 10px;
+  border: 2px solid rgb(138, 91, 0);
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(138, 91, 0);
+  font-weight: bold;
+  background: rgb(241, 227, 202);
+  padding: 10px;
+  border: 2px solid rgb(138, 91, 0);
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  color: #494949;
+  border-radius: 50px;
+  border-color: #494949;
+  transition: all 0.3s ease 0s;
+}
+
+input[type=reset]:hover{
+  color: #494949;
+  border-radius: 50px;
+  border-color: #494949;
+  transition: all 0.3s ease 0s;
+}

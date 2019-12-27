@@ -1,0 +1,94 @@
+/*Container with background image for skincare page*/
+#intro-container-skincare{
+  background-image: url("../Images/background_1.jpg");
+  background-size: cover;
+  top: 2px;
+  height:400px;
+  width: 100%;
+  position: relative;
+}
+/*Container with background image for leather products page*/
+
+#intro-container-leather{
+  background-image: url("../Images/background_2.jpg");
+  background-size: cover;
+  top: 2px;
+  height:400px;
+  width: 100%;
+  position: relative;
+}
+
+/*Intro content on the webpage for all Prodcuts*/
+
+#content{
+  color: white;
+  text-align: center;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  top:20%;
+  letter-spacing: 3px;
+  font-size: 30px;
+  height: 200px;
+  border: 1px solid white;
+  width: 100%;
+
+}
+#content p{
+  font-size: 20px;
+}
+
+/*Styling for displaying product*/
+.product{
+  position: relative;
+  padding: 20px;
+  height:auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.product:hover{
+  background-color: rgb(233, 233, 233);
+}
+
+/*Text style for content under each product*/
+.product-description{
+  position: absolute;
+  right: 40px;
+  width: 60%;
+  top: 10%;
+  padding-left: 15px;
+}
+
+.product-description h3{
+  padding-bottom: 20px;
+}
+
+.product-description a:hover{
+  color: rgb(140, 129, 114);
+  text-decoration: underline;
+}
+
+.product-description a {
+
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(177, 162, 143);
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+
+
+
+.product-description p {
+
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(177, 162, 143);
+  font-weight: bold;
+  font-family: sans-serif;
+  line-height: 30px;
+
+}
