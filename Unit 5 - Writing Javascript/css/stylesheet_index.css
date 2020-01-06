@@ -61,6 +61,7 @@ nav .Logo h1 a{
   margin-left: 10%;
   margin-right: 10%;
   height:1500px;
+  position: relative;
 }
 
 
@@ -109,6 +110,52 @@ nav .Logo h1 a{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+/*Container for search engine*/
+
+.search-container{
+  float: right;
+  position: relative;
+  height: auto;
+  padding-top: 7px;
+
+}
+
+/*the input for search engine*/
+.search-container input[type=text] {
+
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  width: 75%;
+  background-color:#332;
+}
+
+
+/*Search engine button*/
+.search-container button {
+   float: right;
+   padding: 6px;
+   background: inherit;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+   width: 25%;
+}
+
+/*Search icon*/
+i.fa.fa-search{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+/*Searh icon turns grey when hover*/
+.search-container button:hover {
+  background: #ccc;
+}
+
 
 
 /*Slide show */
@@ -359,18 +406,21 @@ nav .Logo h1 a{
     display: none;
   }
 
-  .main {
-    margin-top: 250px;
 
-  }
 
 }
 
 /*Dispay the navigation menu in block when window is resized to 570px*/
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 880px) {
 
   nav .Navigation{
     display: block;
+    float: left;
+  }
+
+  .main {
+    margin-top: 250px;
+
   }
 }
