@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Goldfix Limited Home Page</title>
     <link rel="stylesheet" href="css/stylesheet_index.css">
+    <link rel="stylesheet" href="css/stylesheet_products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -38,18 +39,24 @@
               </div>
 
               <div class="search-container">
-                 <input type="text" placeholder="Search.." name="search">
-                 <button type="submit"><i class="fa fa-search"></i></button>
+                 <input type="text" placeholder="Search.." id="search" onkeypress="return searchKeyPress(event);">
+                 <button type="submit" onclick="submit_search()" id="btnSearch"><i class="fa fa-search"></i></button>
              </div>
 
             </div>
 
       </nav>
 
+  <div class="main" id="searchResults">
+    <div id="all_Prodcuts">
+
+    </div>
+  </div>
+
 
 
     <!-- Newly added products, will be shown as slides -->
-  <div class="main">
+  <div class="main" id="hidden">
     <!-- Image -->
     <div class="slideshow-container">
 

@@ -23,8 +23,15 @@ nav {
   width: 100%;
   z-index: 1;
 
-
 }
+
+.noResult{
+  color:  black;
+  font-size: 25px;
+  text-align: center;
+  font-style: oblique;
+}
+
 
 /*Navigation bar selection*/
 
@@ -130,7 +137,9 @@ nav .Logo h1 a{
   font-size: 17px;
   width: 75%;
   background-color:#332;
+  color: rgb(186, 168, 155);
 }
+
 
 
 /*Search engine button*/
