@@ -48,9 +48,9 @@
       <!-- Contact us form, mailed to author -->
       <div class="container-contact">
         <h2>Contact Us</h2>
-        <form class="Contact Us" action="mailto:arsham14@mcmaster.ca" method="post" enctype="text/plain"><br>
+        <form name="Contact-Us" action="mailto:arsham14@mcmaster.ca" method="post" onsubmit="return formValidation()" enctype="text/plain"><br>
           <label><span>Name:</span></label>
-          <input type="text" name="name" placeholder="Enter Name"><br>
+          <input type="text" id="nameld" name="name" placeholder="Enter Name"><br>
 
           <label><span>Email:</span></label>
           <input type="text" name="email" placeholder="Enter Email"><br>
@@ -65,6 +65,9 @@
           <input type="reset" name="Reset" value="Reset">
         </form>
       </div>
+
+      <script type="text/javascript" src="scripts/formValidation.js"></script>
+
 
     </div>
 
