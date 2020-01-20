@@ -115,7 +115,7 @@ function submit_search(){
 
     var result = document.createElement("p");
     result.className="result";
-    result.innerText = search_results.length + " results show for '" + searchItem+"'";
+    result.innerText = search_results.length + " results shown for '" + searchItem+"'";
     document.getElementById("all_Prodcuts").appendChild(result);
 
 
