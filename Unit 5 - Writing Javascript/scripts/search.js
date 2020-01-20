@@ -100,7 +100,7 @@ function submit_search(){
     pevSearchResults[0].remove();
   }
 
-  var pevSearchResults = document.getElementsByClassName("noResult");
+  var pevSearchResults = document.getElementsByClassName("result");
   var pevSearchResultsLength = pevSearchResults.length;
   for(j=0; j<pevSearchResultsLength; j++){
     pevSearchResults[0].remove();
@@ -112,12 +112,12 @@ function submit_search(){
     var search_results = search(searchItem);
     hideMainPage();
 
-    if(search_results.length == 0){
-      var noResult = document.createElement("p");
-      noResult.className="noResult";
-      noResult.innerText = "No Results Match: " + searchItem;
-      document.getElementById("all_Prodcuts").appendChild(noResult);
-    }
+
+    var result = document.createElement("p");
+    result.className="result";
+    result.innerText = search_results.length + " results show for '" + searchItem+"'";
+    document.getElementById("all_Prodcuts").appendChild(result);
+
 
     showSearchResults(search_results);
     var searchResults = document.getElementById("searchResults");
