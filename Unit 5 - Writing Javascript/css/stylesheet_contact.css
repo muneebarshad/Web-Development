@@ -24,7 +24,6 @@ input[type=text], textarea {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
   resize: vertical;
 }
 
@@ -67,4 +66,16 @@ input[type=reset]:hover{
   border-radius: 50px;
   border-color: #494949;
   transition: all 0.3s ease 0s;
+}
+
+.errorMessage {
+  position: relative;
+  padding-bottom: 10px;
+}
+.errorMessage message{
+  font-style:normal;
+  font-family: cursive;
+  color: red;
+  font-size: 12px;
+  padding-left: 15px;
 }
