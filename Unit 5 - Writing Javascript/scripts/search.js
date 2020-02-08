@@ -5,20 +5,22 @@ hideSearchResults();
 
 var products = [];
 
-
-
 //Construct for the product that consists of category, productName, description and 4 tags attached to each product
-function product(category, productName, description, tag1,tag2,tag3,tag4,image,uri) {
-  this.category = category.toLowerCase();
-  this.productName = productName;
-  this.description = description;
-  this.tag1 = tag1.toLowerCase();
-  this.tag2 = tag2.toLowerCase();
-  this.tag3 = tag3.toLowerCase();
-  this.tag4=tag4.toLowerCase();
-  this.image =image;
-  this.uri = uri;
+
+class product {
+  constructor(category, productName, description, tag1,tag2,tag3,tag4,image,uri) {
+    this.category = category.toLowerCase();
+    this.productName = productName;
+    this.description = description;
+    this.tag1 = tag1.toLowerCase();
+    this.tag2 = tag2.toLowerCase();
+    this.tag3 = tag3.toLowerCase();
+    this.tag4=tag4.toLowerCase();
+    this.image =image;
+    this.uri = uri;
+  }
 }
+
 
 // function to create a product and add it to the products list
 //https://stackoverflow.com/questions/31180331/loop-through-each-new-object-from-constructor
