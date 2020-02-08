@@ -1,10 +1,11 @@
+//if messageFiled is empty or message length is less than 20 then return false
 function formValidation(){
   cleanErrorMessage();
   if(!validateName() || !validateEmail() || !validatePhone() || !validateMessage()){
     return false;
   }
 }
-
+//if name field is empty it will return false
 function validateName(){
   var nameField = document.forms["Contact-Us"]["name"].value;
   if(nameField == ""){
@@ -15,7 +16,7 @@ function validateName(){
   return true;
 
 }
-
+//if emailField is empty or does not include char @ or . then return false
 function validateEmail(){
   var emailField = document.forms["Contact-Us"]["email"].value;
   if(emailField == ""){
@@ -31,6 +32,7 @@ function validateEmail(){
   return true;
 }
 
+// if phoneFiled is empty or does not have length 10 or include characters other then number return false
 function validatePhone(){
   var phoneField = document.forms["Contact-Us"]["phone"].value;
   if(phoneField == ""){
@@ -52,6 +54,7 @@ function validatePhone(){
   return true;
 }
 
+//if messageFiled is empty or message length is less than 20 then return false
 function validateMessage(){
   var messageField = document.forms["Contact-Us"]["message"].value;
   if(messageField.length < 20){
@@ -62,6 +65,7 @@ function validateMessage(){
   return true
 }
 
+//remove any message from HTML
 function cleanErrorMessage(){
   var prevMessage = document.getElementsByTagName("message");
   document.getElementById("messageId").style.border = "1px solid #ccc";
@@ -73,7 +77,9 @@ function cleanErrorMessage(){
   }
 }
 
+//Add error message to HTML
 function errorMessage(message,index){
+  //remove error message from previous errors
   cleanErrorMessage()
   var error = document.createElement("message");
   error.innerText = "*" + message + "*";
