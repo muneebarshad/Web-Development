@@ -142,18 +142,19 @@ nav .Logo h1 a{
   color: rgb(186, 168, 155);
 }
 
+#btnSearch{
+  float: right;
+  padding: 6px;
+  background: inherit;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
 
 
 /*Search engine button*/
-.search-container button {
-   float: right;
-   padding: 6px;
-   background: inherit;
-   font-size: 17px;
-   border: none;
-   cursor: pointer;
-   width: 25%;
-}
 
 /*Search icon*/
 i.fa.fa-search{
