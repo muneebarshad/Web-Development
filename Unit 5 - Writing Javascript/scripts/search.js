@@ -35,13 +35,13 @@ function hideSearchResults(){
 }
 
 function hideMainPage(){
-  var main = document.getElementById("hidden");
+  var main = document.getElementById("mainPage");
   main.style.display = "none";
 }
 
 
 function showMainPage(){
-  var main = document.getElementById("hidden");
+  var main = document.getElementById("mainPage");
   main.style.display = "block";
 }
 
@@ -91,9 +91,11 @@ function search(searchedItem){
   return search_results;
 }
 
+var searchButton = document.getElementById("btnSearch");
 
 
-function submit_search(){
+
+searchButton.onclick = function (){
 
 
   var pevSearchResults = document.getElementsByClassName("product");
@@ -139,6 +141,7 @@ function showSearchResults(search_results){
   for(i =0; i < search_results.length; i++){
     var product = document.createElement("div");
     product.className = "product";
+    product.setAttribute("id","product"+i);
 
     var img = document.createElement("IMG");
     img.setAttribute("src", search_results[i].image);

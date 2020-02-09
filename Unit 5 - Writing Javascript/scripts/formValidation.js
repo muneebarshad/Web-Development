@@ -67,13 +67,14 @@ function validateMessage(){
 
 //remove any message from HTML
 function cleanErrorMessage(){
-  var prevMessage = document.getElementsByTagName("message");
   document.getElementById("messageId").style.border = "1px solid #ccc";
   document.getElementById("phoneId").style.border = "1px solid #ccc";
   document.getElementById("emailId").style.border = "1px solid #ccc";
   document.getElementById("nameld").style.border = "1px solid #ccc";
-  for(i=0; i < prevMessage.length; i++){
-    prevMessage[i].remove();
+
+  var message = document.getElementById("message");
+  if(message != null){
+    message.parentNode.removeChild(message);
   }
 }
 
@@ -82,6 +83,7 @@ function errorMessage(message,index){
   //remove error message from previous errors
   cleanErrorMessage()
   var error = document.createElement("message");
+  error.setAttribute("id","message");
   error.innerText = "*" + message + "*";
   document.getElementsByClassName("errorMessage")[index].appendChild(error);
 
