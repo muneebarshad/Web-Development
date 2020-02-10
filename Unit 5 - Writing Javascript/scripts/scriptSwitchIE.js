@@ -10,21 +10,21 @@ script.type = "text/javascript";
 
 //Search results script
 if (document.title == "Goldfix_Limited_Home_Page") {
-    //If were using IE, switch the script
+    //IE will use this script
     if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
 
         script.src = "scripts/searchIE.js";
 
     }
-    //All other browsers, default to the orginal script
+    //All other browsers to use default script
     else {
 
         script.src = "scripts/search.js";
     }
 }
-
+//ForValidation script
 else {
-    //If were using IE, switch the script
+  //IE will use this script
     if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
 
         script.src = "scripts/formValidationIE.js";
@@ -36,7 +36,5 @@ else {
         script.src = "scripts/formValidation.js";
     }
 }
-
-
 //write to the DOM
 document.getElementById("mainPage").appendChild(script);
