@@ -6,18 +6,22 @@
 
 }
 
+/*Image in the slide show*/
 .imageTop,.imageBottom{
   width:100%;
   padding: 10%;
 }
+/* Images in the bottom slide orignal opacity */
+.imageBottom{
+  opacity: 0.5;
+}
 
+/* Image in the bottom slide gets full opacity */
 .imageBottom:hover{
   opacity: 1;
 }
 
-.imageBottom{
-  opacity: 0.5;
-}
+
 /*CSS code used from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery*/
 
 /*Images displayed in row*/
