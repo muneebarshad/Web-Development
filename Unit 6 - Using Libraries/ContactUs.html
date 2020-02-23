@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us page</title>
+    <link rel="stylesheet" href="css/stylesheet_index.css">
+    <link rel="stylesheet" href="css/stylesheet_contact.css">
+    <link rel="stylesheet" href="css/stylesheet_product.css">
+
+
+  </head>
+  <body>
+    <nav>
+      <div class="Logo">
+        <h1><a href="index.html">GoldFix Limited</a></h1>
+      </div>
+          <!-- Navigation bar -->
+          <div class="Navigation">
+
+            <div class="dropdown">
+              <div class="dropdownButton"><a href="SkinCare.html">Skin Care</a></div>
+              <div class="dropdown-content">
+                <a href="ProductRetinol.html">Retinol Mositurizer</a>
+                <a href="ProductBlackhead.html">Blackhead Mask</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdownButton"><a href="LeatherProducts.html">Leather Products</a></div>
+              <div class="dropdown-content">
+                <a href="ProductWallet.html">Men Wallet</a>
+                <a href="">Women Wallet</a>
+              </div>
+            </div>
+
+            <div class="DropDown">
+              <div class="dropdownButton"><a href="ContactUs.html">Contact Us</a></div>
+            </div>
+
+          </div>
+
+    </nav>
+
+
+    <div class="main" id="mainPage">
+
+
+      <!-- Contact us form, mailed to author -->
+      <div class="container-contact">
+        <h2>Contact Us</h2>
+        <form name="Contact-Us" action="mailto:arsham14@mcmaster.ca" method="post" onsubmit="return formValidation()" enctype="text/plain"><br>
+          <label><span>Name:</span></label>
+          <input type="text" id="nameld" name="name" placeholder="Enter Name"><br>
+          <div class="errorMessage">
+          </div>
+
+          <label><span>Email:</span></label>
+          <input type="text" id="emailId" name="email" placeholder="Enter Email"><br>
+          <div class="errorMessage">
+          </div>
+
+          <label><span>Contact Number:</span></label>
+          <input type="text" id="phoneId" name="phone" placeholder="Enter phone number"><br>
+          <div class="errorMessage">
+          </div>
+
+          <label><span>Message:</span></label><br>
+          <textarea name="message" id="messageId" rows="8" cols="80" placeholder="Enter Message"></textarea><br>
+          <div class="errorMessage">
+          </div>
+
+          <input type="submit" name="Submit" value="Submit">
+          <input type="reset" name="Reset" value="Reset">
+        </form>
+      </div>
+
+      <script type="text/javascript" src="scripts/scriptSwitchIE.js"></script>
+
+
+    </div>
+
+
+  <hr>
+    <!-- Footer Page -->
+    <footer>
+      <p>Copyright &copy; 2019, <em>GoldFix Limited</em></p>
+    </footer>
+
+  </body>
+</html>

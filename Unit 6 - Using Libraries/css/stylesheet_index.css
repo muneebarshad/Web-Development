@@ -1,0 +1,438 @@
+
+body{
+  background-color:rgb(255, 255, 255);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: normal;
+  mac-width: 800px;
+  max height: 800px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Css for Navigation bar fixed at position on all pages*/
+nav {
+
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+.result{
+  color: rgb(186, 168, 155);
+  text-decoration: none;
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 33px;
+  text-align: left;
+}
+
+
+/*Navigation bar selection*/
+
+nav .Navigation{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left: 10%;
+  padding-top: 12px;;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-flex;
+
+}
+
+/*Logo on the navigation bar*/
+nav .Logo{
+  float:left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/*Styling for logo*/
+nav .Logo h1 a{
+  color: rgb(186, 168, 155);
+  text-decoration: none;
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 33px;
+}
+
+/*Main body of the webpage*/
+.main {
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height:1500px;
+  position: relative;
+}
+
+
+
+/*DropDown button for navigation selection. Reused code from : https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+
+.dropdown{
+  position: relative;
+  width: auto;
+
+}
+
+.dropdownButton{
+  width: auto;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdownButton a{
+  text-decoration: none;
+  color: rgb(186, 168, 155);
+  padding-right: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 200px;
+}
+
+.dropdown-content a {
+  color: rgb(186, 168, 155);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*Container for search engine*/
+
+.search-container{
+  float: right;
+  position: relative;
+  height: auto;
+  padding-top: 7px;
+
+}
+
+/*the input for search engine*/
+.search-container input[type=text] {
+
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  width: 75%;
+  background-color:#332;
+  color: rgb(186, 168, 155);
+}
+
+#btnSearch{
+  float: right;
+  padding: 6px;
+  background: inherit;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+
+
+/*Search engine button*/
+
+/*Search icon*/
+i.fa.fa-search{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+/*Searh icon turns grey when hover*/
+.search-container button:hover {
+  background: #ccc;
+}
+
+
+
+/*Slide show */
+
+/*Right and left button on for the slide show*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  user-select:none;
+  width: 15px;
+
+}
+
+.next {
+  right: 0;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  color: rgb(186, 168, 155);
+}
+
+/*Slide show  container*/
+.slideshow-container{
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  position: relative;
+  width: 100%;
+
+}
+
+/*Block all slides in the start*/
+.mySlides{
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+
+/*Text in slides*/
+.mySlides p{
+
+  color:  rgb(230, 172, 95);
+  font-size: 25px;
+  text-align: center;
+  width: auto;
+  position: absolute;
+  left: 30px;
+  top: 150px;
+  margin-left: 400px;
+}
+
+
+
+/*Image in slide show position*/
+.image{
+  padding-left: 20px;
+  width: 30%;
+}
+
+
+/*Text inside the slide container*/
+.
+
+
+.text p{
+  padding-top: 70px;
+  padding-right: 15px;
+  color:  rgb(230, 172, 95);
+  font-size: 30px;
+  text-align: center;
+}
+
+/*CSS code used from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+/*  Fair Use Policy: https://www.w3schools.com/about/default.asp */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Discover button inside the slide container*/
+
+#DiscoverButton{
+  position: absolute;
+  bottom: 10px;
+  padding-left: 350px;
+}
+
+#DiscoverButton a{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(230, 172, 95);
+  background-color:rgb(222, 221, 220);
+  font-weight: bold;
+}
+
+#DiscoverButton a:hover{
+  background-color: white;
+  font-weight: lighter;
+
+}
+
+/*Container used at the bottom of the page for about us and connect section*/
+.container{
+  background-color: white;
+  padding-left:15px;
+  padding-right: 15px;
+  position: relative;
+  top: 250px;
+  height:400px;
+  width: 100%;
+  position: relative;
+}
+
+
+/*About us container on home page */
+#AboutUs{
+  background-color: rgb(230, 230, 230);
+  height: 400px;
+  padding-left:15px;
+  padding-right: 15px;
+  position: absolute;
+  width: 50%;
+  opacity: 0.8;
+  overflow: auto;
+}
+
+#AboutUs h3{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(61, 48, 18);
+  letter-spacing: 1px;
+  padding-top: 15px;
+
+}
+
+#AboutUs p{
+  padding-top: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(61, 48, 18);
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+#AboutUs p span{
+  font-weight: 600;
+  color: rgb(126, 100, 6);
+}
+
+/*Connect section on the index webpage*/
+
+#Connect{
+
+  background-color: white;
+  padding-left:15px;
+  padding-right: 15px;
+  position: absolute;
+  height:400px;
+  width: 40%;
+  right: 0px;
+  margin-left: 40px;
+  border-left: 1px solid rgb(142, 133, 106);
+
+}
+
+#Connect h3{
+  color:  rgb(61, 48, 18);
+  font-size: 14px;
+  font-weight: 600px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+}
+
+
+
+/*Social icons: facebook and amazon. Reused code from w3schools*/
+.social-icons{
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  opacity: 0.8;
+}
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-amazon{
+  background: rgb(238, 238, 238);
+  color: black;
+}
+
+.LogoImage {
+  opacity: 0.5;
+  width: 100%;
+  height: 250px;
+
+}
+
+
+/*Descrease the size of the text in slides when window is resized*/
+@media screen and (max-width: 1200px) {
+
+  .mySlides p{
+    font-size: 15px;
+  }
+
+}
+
+/*Remove the text in slides and shift the main page down when window is resized to 750px*/
+
+@media screen and (max-width: 750px) {
+
+  .mySlides p{
+    display: none;
+  }
+
+
+
+}
+
+/*Dispay the navigation menu in block when window is resized to 570px*/
+
+@media screen and (max-width: 880px) {
+
+  nav .Navigation{
+    display: block;
+    float: left;
+  }
+
+  .main {
+    margin-top: 250px;
+
+  }
+}

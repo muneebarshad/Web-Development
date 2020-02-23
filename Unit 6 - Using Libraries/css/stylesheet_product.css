@@ -1,0 +1,184 @@
+/*Container for product images*/
+.image-container {
+  height:600px;
+  width: 35%;
+  position: absolute;
+
+
+}
+/*CSS code used from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery*/
+
+/*Images displayed in row*/
+.row{
+  position: absolute;
+  top: 310px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* three columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/*Image hidden at first*/
+.mySlides{
+  display: none;
+  padding-left: 30px;
+
+}
+
+/*ROw images styling*/
+.demo {
+  opacity: 0.6;
+}
+
+.demo:hover {
+  opacity: 1;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+/*Container for the product description*/
+.content-container{
+  right: 0;
+  width: 50%;
+  position: absolute;
+}
+
+.content-container h3{
+  font-size: 34px;
+  text-align:left;
+
+  letter-spacing: 4px;
+  color: black;
+  font-family: serif;
+  font-weight: bold;
+  width: 70%;
+  padding-bottom: 0px;
+
+}
+
+.content-container p{
+  border-top: 0.5px solid rgb(130, 118, 102);
+  font-size: 14px;
+  text-align:left;
+  letter-spacing: 4px;
+  color: rgb(185, 181, 172);
+  font-family: cursive;
+  font-weight: lighter;
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+}
+
+.content-container ul{
+  padding-left: 20px;
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.content-container ul li{
+  padding-bottom: 10px;
+  line-height: 23px;
+  font-size: 16px;
+  color: rgb(139, 125, 113);
+  padding-left: 10px;
+}
+
+/*Table style for product details*/
+#table{
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+
+#Product-Details h4{
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: rgb(139, 125, 113);
+  font-weight: bold;
+}
+
+#table td{
+  border: 0.1px dotted grey;
+  padding: 8px;
+  font-size: 16px;
+  color: rgb(139, 125, 113);
+}
+
+#table tr:nth-child(even){
+  background-color: rgb(255, 249, 237);
+}
+
+/*Buy now button styling. Code resused from: : https://www.fabriziovanmarciano.com/button-styles/*/
+#buynow{
+  padding-top: 30px;
+
+}
+
+#buynow a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(138, 91, 0);
+  font-weight: bold;
+  background: rgb(241, 227, 202);
+  padding: 10px;
+  border: 2px solid rgb(138, 91, 0);
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+}
+
+#buynow a:hover{
+  color: #494949;
+  border-radius: 50px;
+  border-color: #494949;
+  transition: all 0.3s ease 0s;
+}
+
+/*Write a review button*/
+#review{
+  margin-top: 30px;
+  padding-top: 5px;
+
+}
+
+#review a{
+  font-size: 14px;
+  width: 20%;
+  color: grey;
+  text-decoration: none;
+
+}
+
+#review a:hover{
+  color: black;
+}
+
+
+/*Review stars. COde resused from w3school*/
+.checked{
+  color: orange;
+}
+
+.fa-star{
+  padding: 0;
+  width: auto;
+}
+
+.stars{
+  padding-right: 20px;
+  width: auto;
+
+}
