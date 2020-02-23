@@ -1,10 +1,22 @@
 /*Container for product images*/
 .image-container {
-  height:600px;
-  width: 35%;
+  height:700px;
+  width: 40%;
   position: absolute;
 
+}
 
+.imageTop,.imageBottom{
+  width:100%;
+  padding: 10%;
+}
+
+.imageBottom:hover{
+  opacity: 1;
+}
+
+.imageBottom{
+  opacity: 0.5;
 }
 /*CSS code used from : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery*/
 

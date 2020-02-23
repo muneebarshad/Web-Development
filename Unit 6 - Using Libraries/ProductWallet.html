@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/stylesheet_index.css">
     <link rel="stylesheet" href="css/stylesheet_product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css"/>
 
   </head>
 
@@ -45,35 +47,29 @@
 
     <div class="main">
       <div class="image-container">
-
-        <div class="mySlides">
-          <img src="Images/wallet_1.jpg" alt="Blackhead Image" height="300px" width="70%">
-        </div>
-        <div class="mySlides">
-          <img src="Images/wallet_2.jpg" alt="Blackhead Image"  height="300px" width="70%">
-        </div>
-        <div class="mySlides">
-          <img src="Images/wallet_3.jpg" alt="Blackhead Image" height="300px"  width="70%">
-        </div>
-
-        <!--This script was created by W3Schools; How To- Slideshow-->
-         <!--Link to guide: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-         <!--Fair Use Policy: https://www.w3schools.com/about/default.asp -->
-         <script type="text/javascript" src="scripts/Slideshow.js"></script>
-
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="Images/wallet_1.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(1)">
+        <!-- Product image displayed from the bottom slider -->
+          <div class="prdouct-images">
+            <div><img src="Images/wallet_1.jpg" class="imageTop" alt="Blackhead Image" ></div>
+            <div><img src="Images/wallet_3.jpg" class="imageTop" alt="Blackhead Image" ></div>
+            <div><img src="Images/wallet_2.jpg" class="imageTop" alt="Blackhead Image" ></div>
           </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/wallet_3.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(2)">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/wallet_3.jpg" alt="Blackhead Image" height="200px" style="width:100%" onclick="currentSlide(3)">
-          </div>
-        </div>
 
+          <!-- Bottom slider to display the product images -->
+          <div class="slider-nav">
+            <div><img src="Images/wallet_1.jpg" class="imageBottom" alt="Blackhead Image" ></div>
+            <div><img src="Images/wallet_3.jpg" class="imageBottom" alt="Blackhead Image" ></div>
+            <div><img src="Images/wallet_2.jpg" class="imageBottom" alt="Blackhead Image" ></div>
+          </div>
+         <!--Load jquery-->
+         <script type="text/javascript" src="scripts/jquery.js"></script>
+         <!-- Load image slide jquery -->
+         <script type="text/javascript" src="scripts/jqueryImageSlider.js"></script>
+         <!--Load slick-master plugin-->
+         <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
       </div>
+
+
+
 
       <div class="content-container">
         <h3>Men's Leather Wallet</h3>
