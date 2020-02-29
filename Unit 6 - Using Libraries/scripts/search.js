@@ -31,7 +31,7 @@ function addProduct(category, productName, description, tag1,tag2,tag3,tag4,imag
 
 //Create prodcuts from the website and adds it to the array
 addProduct("skincare","Retinol Moisturizer","GOLDFIX 2.5% Retinol Moisturizer with SPF 50+ with Hyaluronic Acid, Vitamin B5, Shea Butter - Best All in One Cream And Sun Protection to Help Reduces Appearance of Fine Lines and Crow's Feet","retinol", "moisturizer","antiaging","antiwrinkle","Images/retinol_1.jpg","ProductRetinol.html");
-addProduct("skincare","Blackhead Mask","GoldFix Blackhead Remover Peel Off Mask","Blackhead ", "Mask","antiaging","Acne","Images/blackhead_1.jpg","ProductBlackhead.html");
+addProduct("skincare","Blackhead Mask","GoldFix Blackhead Remover Peel Off Mask","Blackhead ", "Mask","blackhead","Acne","Images/blackhead_1.jpg","ProductBlackhead.html");
 addProduct("leather","Men wallet","Handmade Men’s Leather Wallet in Brown, 100% Leather","men", "brown","wallets","wallet","Images/wallet_1.jpg","ProductWallet.html");
 
 
