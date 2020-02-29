@@ -402,6 +402,8 @@ i.fa.fa-search{
 
 }
 
+/*  Scroll to top button.
+Reference: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 .scroll-top{
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -417,6 +419,10 @@ i.fa.fa-search{
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   opacity: 0.2;
+}
+
+.scroll-top:hover{
+  background-color: rgb(66, 64, 66);
 }
 
 
