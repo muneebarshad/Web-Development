@@ -48,34 +48,36 @@
       <!-- Contact us form, mailed to author -->
       <div class="container-contact">
         <h2>Contact Us</h2>
-        <form name="Contact-Us" action="mailto:arsham14@mcmaster.ca" method="post" onsubmit="return formValidation()" enctype="text/plain"><br>
-          <label><span>Name:</span></label>
-          <input type="text" id="nameld" name="name" placeholder="Enter Name"><br>
-          <div class="errorMessage">
-          </div>
+        <div>
+            <form id="contact-form">
+              <div class="contactField">
+                <label><span>Name:</span></label>
+                <input type="text" name="Name" placeholder="Enter Name">
+              </div>
 
-          <label><span>Email:</span></label>
-          <input type="text" id="emailId" name="email" placeholder="Enter Email"><br>
-          <div class="errorMessage">
-          </div>
+              <div class="contactField">
+                <label><span>Email:</span></label>
+                <input type="email" name="Email" placeholder="Enter Email">
+              </div>
 
-          <label><span>Contact Number:</span></label>
-          <input type="text" id="phoneId" name="phone" placeholder="Enter phone number"><br>
-          <div class="errorMessage">
-          </div>
+              <div class="contactField">
+                <label><span>Contact Number:</span></label>
+                <input type="text" name="Phone" placeholder="Enter Contact Number (optional)">
+              </div>
 
-          <label><span>Message:</span></label><br>
-          <textarea name="message" id="messageId" rows="8" cols="80" placeholder="Enter Message"></textarea><br>
-          <div class="errorMessage">
-          </div>
+              <div class="contactField">
+                <label><span>Message:</span></label><br>
+                <textarea id="message" name="Message" rows="8" cols="80" placeholder="Enter Message"></textarea>
+              </div>
 
-          <input type="submit" name="Submit" value="Submit">
-          <input type="reset" name="Reset" value="Reset">
-        </form>
+
+              <input type="submit" id="Submit" name="Submit" value="Submit">
+              <input type="reset" name="Reset" value="Reset">
+
+                <!-- <button type="submit" class="form-control submit" >Send Message</button> -->
+            </form>
+        </div>
       </div>
-
-      <script type="text/javascript" src="scripts/scriptSwitchIE.js"></script>
-
 
     </div>
 
@@ -88,6 +90,16 @@
         <script type="text/javascript" src="scripts/jquery.js"></script>
         <!-- Load image slide jquery -->
         <script type="text/javascript" src="scripts/jqueryScrollTop.js"></script>
+        <script type="text/javascript" src="jqueryvalidation/jquery.validate.js"></script>
+        <script type="text/javascript" src="jqueryValidation\jquery.validate.additional-methods.js"></script>
+        <script type="text/javascript" src="scripts/jqueryFormValidation.js"></script>
+
+
+
+
+
+
+
 
 
   <hr>

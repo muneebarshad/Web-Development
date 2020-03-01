@@ -9,10 +9,18 @@
 
 }
 
+/* Contact form heading */
 h2{
   font-size: 24px;
   padding-top: 10px;
   color: rgb(138, 91, 0);
+  margin: 10px;
+  padding-bottom: 10px;
+
+}
+/* ------------Input fields--------------- */
+.contactField{
+  margin: 10px;
 }
 
 /*Styling for input section. Code reused from w3schools*/
@@ -27,7 +35,18 @@ input[type=text], textarea {
   resize: vertical;
 }
 
+input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
 
+
+/* Submit and reset button */
 input[type=submit] {
   display: inline-block;
   text-decoration: none;
@@ -39,6 +58,7 @@ input[type=submit] {
   border-radius: 3px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 input[type=reset] {
@@ -52,8 +72,11 @@ input[type=reset] {
   border-radius: 3px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  margin-left: 10px;
+
 }
 
+/* Submit and reset button when hover */
 input[type=submit]:hover{
   color: #494949;
   border-radius: 50px;
@@ -68,14 +91,11 @@ input[type=reset]:hover{
   transition: all 0.3s ease 0s;
 }
 
-.errorMessage {
-  position: relative;
-  padding-bottom: 10px;
-}
-.errorMessage message{
+
+
+/* Error message styling */
+.error{
   font-style:normal;
-  font-family: cursive;
-  color: red;
+  color: rgb(218, 52, 0);
   font-size: 12px;
-  padding-left: 15px;
 }
