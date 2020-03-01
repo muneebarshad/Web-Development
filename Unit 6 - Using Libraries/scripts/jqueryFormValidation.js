@@ -3,18 +3,22 @@
   $('#contact-form').validate ({
       //Check to see if user input matches what is required
       rules: {
+        // Name should be required with minlength of 2
         Name: {
             required: true,
             minlength: 2
         },
+        // Phone field is optional with US format phone number
         Phone: {
           required: false,
           phoneUS: true
         },
+        // Email field required with valid email
         Email: {
             required: true,
             email: true,
         },
+        // Message field required with minlength 5
         Message: {
             required: true,
             minlength:5
@@ -41,8 +45,10 @@
         },
       },
 
+      // After submit button is clicked
       submitHandler: function (form) {
         // https://stackoverflow.com/questions/26104378/jquery-mailto-with-anchor-element/26105504
+        // MailTo config email with email body and subject
         var subject="Customer Message";
         var contactName = $("input[name=Name]").val();
         var contactEmail = $("input[name=Email]").val();
@@ -56,6 +62,7 @@
         + "Contact Phone Number: " + contactPhone + br + br
         + "Message: " + message;
 
+        // action: mailTo method:POST
         window.location = 'mailto:' + "arsham14@mcmaster.ca" + '?subject=' + subject + '&body=' +   emailBody;;
 
       }
