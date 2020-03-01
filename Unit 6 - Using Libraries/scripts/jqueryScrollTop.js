@@ -7,7 +7,6 @@ $(document).ready(function(){
 
         var scrollPos = $(window).scrollTop();
         if(scrollPos > 180){
-          console.log("going down");
           $(".scroll-top").show();
         }
         else{

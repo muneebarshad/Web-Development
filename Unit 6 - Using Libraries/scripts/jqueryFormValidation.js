@@ -1,3 +1,5 @@
+// https://www.htmlgoodies.com/tutorials/forms/article.php/3895196
+//Plugin ref: https://jqueryvalidation.org/
   $('#contact-form').validate ({
       //Check to see if user input matches what is required
       rules: {
@@ -40,6 +42,7 @@
       },
 
       submitHandler: function (form) {
+        // https://stackoverflow.com/questions/26104378/jquery-mailto-with-anchor-element/26105504
         var subject="Customer Message";
         var contactName = $("input[name=Name]").val();
         var contactEmail = $("input[name=Email]").val();
