@@ -129,6 +129,86 @@
     </div>
 
 
+    <script>
+
+      var reviewList=[]
+
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '223791902142726',
+          xfbml      : true,
+          cookie     : true,
+          version    : 'v6.0'
+        });
+        init();
+      };
+      sortReviews();
+
+
+
+      class review {
+        constructor(rating, review_text, recommendation_type) {
+          this.rating = rating;
+          this.review_text = review_text;
+          this.recommendation_type = recommendation_type;
+        }
+      }
+
+
+
+      function addReview(rating, review_text, recommendation_type){
+        var newReview = new review(rating, review_text, recommendation_type);
+        reviewList.push(newReview);
+      }
+
+      function sortReviews(){
+        var reviewCount = reviewList.length
+        for(i =0; i <reviewCount; i++){
+          if(reviewList[i].recommendation_type != "positive"){
+            reviewList[i].remove();
+          }
+        }
+
+
+
+
+
+      }
+
+
+
+
+
+
+      function init() {
+        FB.api('/goldfix.ca/ratings?access_token=EAADLiZAzUsQYBAM3LhPwZB8laahrytYZACionBqDqiqvwWjCRHYRPVmEzpkipOW1jZAY2Mu0V2dnxAFCIDJaYGMnxTZC6eT3XPPmyauGf7RVfoEoB3absUkZAXF4TtYW7uvr9912zf56P1lNyOidF3E3Hj1ZCyziw2P8ijU4g6BYAX6tdxpf58E','GET',
+          function(response) {
+            if (response && !response.error_message) {
+
+              var object = response;
+              var rating_count = object.data.length;
+              for( i=0; i <response.data.length; i++){
+                addReview(object.data[i].rating,object.data[i].review_text,object.data[i].recommendation_type);
+                console.log("Review added");
+                console.log(reviewList[i].review_text);
+              }
+            }
+          }
+        );
+    }
+
+
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+
+  </script>
 
 
 
