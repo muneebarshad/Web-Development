@@ -9,10 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css"/>
-
+    <!--Load the Twitter Javascript API Asynchronously from Twitter's CDN-->
+    <script id="twitter-wjs" async src="https://platform.twitter.com/widgets.js"></script>
   </head>
 
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=223791902142726&autoLogAppEvents=1"></script>
+    <!--Load jquery-->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <!-- Load image slide jquery -->
+    <script type="text/javascript" src="scripts/jqueryImageSlider.js"></script>
+    <!--Load slick-master plugin-->
+    <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+     <!-- Load scroll to top jquery -->
+    <script type="text/javascript" src="scripts/jqueryScrollTop.js"></script>
+    <!--Twitter Javascript API Snippet - Provides better performance and reliability-->
+    <!--Source: https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites -->
+    <script type="text/javascript" src="scripts/twitterDevCode.js"></script>
+    <!--Load Tweet Button Script-->
+    <script type="text/javascript" src="scripts/twitter.js"></script>
+
     <nav>
       <div class="Logo">
         <h1><a href="index.html">GoldFix Limited</a></h1>
@@ -48,6 +66,7 @@
       <div class="image-container">
 
 
+
         <!-- Product image displayed from the bottom slider -->
           <div class="prdouct-images">
             <div><img src="Images/blackhead_1.jpg" class="imageTop" alt="Blackhead Image" ></div>
@@ -62,40 +81,19 @@
             <div><img src="Images/blackhead_3.jpg" class="imageBottom" alt="Blackhead Image" ></div>
           </div>
 
-
-         <!--Load jquery-->
-         <script type="text/javascript" src="scripts/jquery.js"></script>
-         <!-- Load image slide jquery -->
-         <script type="text/javascript" src="scripts/jqueryImageSlider.js"></script>
-         <!--Load slick-master plugin-->
-         <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
-          <!-- Load scroll to top jquery -->
-         <script type="text/javascript" src="scripts/jqueryScrollTop.js"></script>
-
-
       </div>
 
 
 
       <div class="content-container">
-          <h3>Blackhead Mask</h3>
-          <div class="stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
+          <h3><span class="product-name">Blackhead Mask</span></h3>
           <p>GoldFix Blackhead Remover Peel Off Mask</p>
-
-
 
           <ul>
             <li>GoldFix Blackhead Remover Peel Off Mask is a Organic Carbon Black Face Mask</li>
             <li>Designed to treat Acne, Blackheads, Impurities, Discoloration & Anti Aging Charcoal Facial Mask remove Dead skin, Old Cell Tissues and fine facial hair.</li>
             <li>Effective, Inexpensive and Worldwide Certified</li>
           </ul>
-
 
               <div id="Product-Details">
                 <h4>Product Details</h4>
@@ -111,15 +109,20 @@
                     </table>
               </div>
 
-          <div id="buynow">
-            <a href="https://www.amazon.com/GOLDFIX-Blackhead-Remover-Peel-Off-Cleansing/dp/B071S8JVFQ?ref_=ast_sto_dp">BUY NOW</a>
-          </div>
 
-          <div id="review">
-            <a href="https://www.facebook.com/goldfix.ca/reviews/">Write a Review</a>
-          </div>
+              <div class="socialBtn">
+                <div id="buynow">
+                  <a href="https://www.amazon.com/GOLDFIX-Blackhead-Remover-Peel-Off-Cleansing/dp/B071S8JVFQ?ref_=ast_sto_dp">BUY NOW</a>
+                </div>
+
+                <div id="tweet-shareBtn" ></div>
+
+              </div>
 
       </div>
+      <!-- Facebook comment -->
+      <div class="fb-comments" data-href="http://student.athabascau.ca/~muneebar/Unit%207%20-%20Using%20External%20Sources/ProductBlackhead.html" data-width="" data-numposts="5"></div>
+
 
 
     </div>
@@ -127,92 +130,6 @@
     <div class="scroll-top">
       <p>Go to Top</p>
     </div>
-
-
-    <script>
-
-      var reviewList=[]
-
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '223791902142726',
-          xfbml      : true,
-          cookie     : true,
-          version    : 'v6.0'
-        });
-        init();
-      };
-      sortReviews();
-
-
-
-      class review {
-        constructor(rating, review_text, recommendation_type) {
-          this.rating = rating;
-          this.review_text = review_text;
-          this.recommendation_type = recommendation_type;
-        }
-      }
-
-
-
-      function addReview(rating, review_text, recommendation_type){
-        var newReview = new review(rating, review_text, recommendation_type);
-        reviewList.push(newReview);
-      }
-
-      function sortReviews(){
-        var reviewCount = reviewList.length
-        for(i =0; i <reviewCount; i++){
-          if(reviewList[i].recommendation_type != "positive"){
-            reviewList[i].remove();
-          }
-        }
-
-
-
-
-
-      }
-
-
-
-
-
-
-      function init() {
-        FB.api('/goldfix.ca/ratings?access_token=EAADLiZAzUsQYBAM3LhPwZB8laahrytYZACionBqDqiqvwWjCRHYRPVmEzpkipOW1jZAY2Mu0V2dnxAFCIDJaYGMnxTZC6eT3XPPmyauGf7RVfoEoB3absUkZAXF4TtYW7uvr9912zf56P1lNyOidF3E3Hj1ZCyziw2P8ijU4g6BYAX6tdxpf58E','GET',
-          function(response) {
-            if (response && !response.error_message) {
-
-              var object = response;
-              var rating_count = object.data.length;
-              for( i=0; i <response.data.length; i++){
-                addReview(object.data[i].rating,object.data[i].review_text,object.data[i].recommendation_type);
-                console.log("Review added");
-                console.log(reviewList[i].review_text);
-              }
-            }
-          }
-        );
-    }
-
-
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-
-  </script>
-
-
-
-
 
 
     <hr>

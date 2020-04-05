@@ -7,8 +7,14 @@
 }
 
 /*Image in the slide show*/
-.imageTop,.imageBottom{
-  width:100%;
+.imageTop{
+  width:80%;
+  padding: 10%;
+}
+
+/*Image in the slide show*/
+.imageBottom{
+  width:70%;
   padding: 10%;
 }
 /* Images in the bottom slide orignal opacity */
@@ -139,13 +145,14 @@
 }
 
 /*Buy now button styling. Code resused from: : https://www.fabriziovanmarciano.com/button-styles/*/
-#buynow{
+#buynow, #tweet-shareBtn{
   padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 
 }
 
 #buynow a{
-  display: inline-block;
   text-decoration: none;
   color: rgb(138, 91, 0);
   font-weight: bold;
@@ -163,38 +170,13 @@
   transition: all 0.3s ease 0s;
 }
 
-/*Write a review button*/
-#review{
-  margin-top: 30px;
-  padding-top: 5px;
 
-}
-
-#review a{
-  font-size: 14px;
-  width: 20%;
-  color: grey;
-  text-decoration: none;
-
-}
-
-#review a:hover{
-  color: black;
+.socialBtn{
+  display: inline-flex;
 }
 
 
-/*Review stars. COde resused from w3school*/
-.checked{
-  color: orange;
-}
 
-.fa-star{
-  padding: 0;
-  width: auto;
-}
-
-.stars{
-  padding-right: 20px;
-  width: auto;
-
+.fb-comments{
+  top: 900px;
 }

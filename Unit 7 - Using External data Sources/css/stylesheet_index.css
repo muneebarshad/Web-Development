@@ -295,8 +295,17 @@ i.fa.fa-search{
   background-color: white;
   padding-left:15px;
   padding-right: 15px;
-  position: relative;
   top: 250px;
+  height:400px;
+  width: 100%;
+  position: relative;
+}
+
+.fb{
+  background-color: white;
+  padding-left:15px;
+  padding-right: 15px;
+  top: 300px;
   height:400px;
   width: 100%;
   position: relative;
@@ -424,6 +433,12 @@ Reference: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 .scroll-top:hover{
   opacity: 0.5;
 }
+
+.fb-page{
+  width: 100%;
+  height:400px;
+}
+
 
 
 /*Descrease the size of the text in slides when window is resized*/
