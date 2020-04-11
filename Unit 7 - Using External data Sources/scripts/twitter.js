@@ -30,6 +30,7 @@ if (typeof (twttr.ready) == "undefined") {
 
     //Add the Twitter tweet button
     twttr.widgets.createShareButton(
+      //product link
         $(document)[0].URL,
         document.getElementById("tweet-container"),
         {

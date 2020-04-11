@@ -56,7 +56,7 @@
         var message = $("#message").val();
         var br ="%0D%0A";
         // https://stackoverflow.com/questions/4768118/how-to-break-line-in-javascript
-        var emailBody = "Cusomter Contact Information: " + br + br
+        var emailBody = "Customer Contact Information: " + br + br
         + "Contact Name: " + contactName + br
         + "Contact Email: " + contactEmail + br
         + "Contact Phone Number: " + contactPhone + br + br
